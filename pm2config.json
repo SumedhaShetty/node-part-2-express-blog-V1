@@ -1,0 +1,10 @@
+{
+    "apps": [{
+        "name": "app",
+        "script": "blog.js",
+        "watch": true,
+        "env": {
+            "NODE_ENV": "production"
+        }
+    }]
+}

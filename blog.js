@@ -23,7 +23,7 @@ app.use(logger);
 
 // define routes
 app.get('/', (req, res) => {
-  res.send('Hello, this is the Blog Home Page.')
+  res.send('Welcome to Blog App');
 })
 
 app.get('/about', (req, res) => {
