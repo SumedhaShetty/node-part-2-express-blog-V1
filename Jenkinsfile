@@ -24,7 +24,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying the application...'
-                sshPublisher(publishers: [sshPublisherDesc(configName: 'app-server-dev', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: '''mv node-build.tar.gz /var/www/test
+                sshPublisher(publishers: [sshPublisherDesc(configName: 'simple_blog', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: '''mv node-build.tar.gz /var/www/test
                 cd /var/www/test
                 tar xzf node-build.tar.gz
                 rm node-*.tar.gz
